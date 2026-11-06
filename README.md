@@ -1,16 +1,30 @@
-# React + Vite
+# ClimaSmart App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web frontend desarrollada con React y Tailwind CSS, conectada a la API REST pública de Open-Meteo para la consulta meteorológica en tiempo real con un asistente de recomendaciones adaptativo.
 
-Currently, two official plugins are available:
+## Integrantes
+- Juan Sánchez Posada
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologías Utilizadas
+- React (v18.3+): Biblioteca principal basada en componentes para la interfaz de usuario.
+- Vite (v5.4+): Entorno de desarrollo y empaquetador de módulos de alta velocidad.
+- Tailwind CSS: Framework CSS utilitario para maquetación limpia y responsiva.
+- Open-Meteo API: Consumo de servicios REST externos para datos de geolocalización y variables meteorológicas sin necesidad de API Keys ni errores de CORS.
+- Git & GitHub: Control de versiones con un historial distribuido de commits.
+- Vercel: Despliegue continuo en la nube para la demo accesible en línea.
 
-## React Compiler
+## Enlaces Oficiales de Entrega
+- **Repositorio en GitHub**: [https://github.com/MonetJuan/clima-smart-app](https://github.com/MonetJuan/clima-smart-app)
+- **Demo Funcional en Vercel**: [https://clima-smart-app.vercel.app/](https://clima-smart-app.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Arquitectura Técnica y Funcionalidades
+La solución adopta una arquitectura desacoplada basada en componentes React:
+1. **Geocodificación REST**: Transforma el nombre de la ciudad consultada en coordenadas geográficas (latitud y longitud).
+2. **Pronóstico en Tiempo Real**: Consulta la API meteorológica extrayendo la temperatura y la velocidad del viento.
+3. **Motor de Análisis Adaptativo**: Evalúa la temperatura y despliega recomendaciones de vestimenta/actividades.
+4. **Historial de Consultas**: Mantiene un registro en memoria de las búsquedas previas realizadas durante la sesión.
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Instalación y Ejecución Local
+1. Clona el repositorio:
+   ```bash
+   git clone [https://github.com/MonetJuan/clima-smart-app.git](https://github.com/MonetJuan/clima-smart-app.git)
