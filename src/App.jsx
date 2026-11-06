@@ -96,6 +96,7 @@ export default function App() {
           </div>
         )}
 
+
         {clima && (
           <div className="border border-gray-200 p-4 rounded mb-6 bg-gray-50">
             <h2 className="font-semibold text-gray-800 text-base mb-2">{clima.lugar}</h2>
